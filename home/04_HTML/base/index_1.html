@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>04_HTML_base_index_1</title>
+        <style>
+            .center {
+                width: 620px;
+                padding: 10px;
+                margin: auto;
+            }
+        </style>
+        <style>
+            .fig {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+       <div class="center">
+       
+        <p><img src="Icon-Python.png" alt="Icon-Python" align="right" title="Icon-Python" width="250" height="250"></p>
+        
+        <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        <ul>
+            <li><a href="index_1.html" target="_blank"><em>Программа на Python — часть 1</em></a></li>
+            <li><a href="index_2.html" target="_blank"><em>Программа на Python — часть 2</em></a></li>
+            <li><a href="index_3.html" target="_blank"><em>Программа на Python — часть 3</em></a></li>
+        </ul>
+        <h2 id="contents">Содержание</h2>
+        <h3>HOW-TO: Программа на Python, Часть 1</h3>
+        <ul>
+            <li><a href="#first_section"><ins>Наша первая программа</ins></a></li>
+            <li><a href="#second_section"><ins>Пример цикла For</ins></a></li>
+        </ul>
+        <p>Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+            Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+            состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+            для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+            программирование графических интерфейсов (<ins>GUI</ins>). Давайте создадим простую программу прямо
+            сейчас.
+        </p>
+        <h2 id="first_section">Наша первая программа</h2>
+        <a href="#contents">К содержанию</a>
+        <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает каждая
+            строка и пойдём дальше.</p>
+        <p>Введите эти 4 строки:
+        <pre>#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!" </pre> 
+            Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+            <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать программу на
+            Python. Для запуска программы нужно сделать её файл исполняемым. Для этого введите в терминале
+            <pre><ins><strong><em>chmod +x hello.py</em></strong></ins></pre>
+            в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+        <pre><code>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$</code></pre>
+            Вот и всё.
+        </p>
+<!-- можно ли использовать в блочном <p> еще и <pre> и можно ли это считать примером "красивого кода"-->
+        <h2 id="second_section">Пример цикла For</h2>
+        <a href="#contents">К содержанию</a>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и наберите следующую программу:
+            <pre>#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr</pre>
+            <em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках программирования, а отступы.</p>
+
+        <p class="fig">
+            
+            <a href="#no_scroll"><img src="Left button.png" alt="Left-button" align="left" title="Left-button" width="25" height="25"></a>
+        
+            <a href="#contents"><img src="Home button.png" alt="Home-button" align="center" title="Home-button" width="25" height="25"></a>
+        
+            <a href="index_2.html" target="_blank"><img src="Right button.png" alt="Right-button" align="right" title="Right-button" width="25" height="25"></a>
+        
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       
+    </div>
+    </body>
+</html>
