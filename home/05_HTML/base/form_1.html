@@ -3,67 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <title>05_HTML_form_1</title>
-        <style>
-            .center {
-                width: 700px;
-                padding: 10px;
-                margin: auto;
-            }
-        </style>
     </head>
     <body>
-       <div class="center">
-       <table>
+       <table width="700px" align="center">
         <tr>
-            <th align="left">Простая форма поиска с вариантами:
-                <br>
-                <br>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" action="form.php">
+            <td>
+                <p><strong>Простая форма поиска с вариантами:</strong></p>
+                <form name="form_1" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
-                        <legend align="left">Строка поиска</legend>
-                        <label>Имя<input type="text" required></label>
-                        <label>E-mail<input type="email" required></label>
-                        </fieldset>
-                </form>
-
-
-            </th>
-
-            <th align="left">Простая форма поиска с вариантами:
-                <br>
-                <br>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">    
-                <fieldset>
-                    
+                        <legend>Строка поиска</legend>
+                            <input type="text" name="search" maxlength="10">
+                            <input type="submit" value="Искать"> <br>
+                            <input type="radio" name="radio_form_1" value="site" id="site"> на сайте
+                            <input type="radio" name="radio_form_1" value="google" id="google"> в google <br>
                     </fieldset>
                 </form>
-            </th>
+            </td>
 
+            <td>
+                <p><strong>Простая форма поиска с вариантами:</strong></p>
+                <form name="form_2" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                            <input type="text" name="search" autofocus required> *
+                            <input type="submit" value="Искать"> <br>
+                            <input type="radio" name="radio_form_2" value="site" id="site"> на сайте
+                            <input type="radio" name="radio_form_2" value="google" id="google"> в google <br>
+                    </fieldset>
+                </form>
+            </td>
         </tr>
-
+            <br>
+            <br>
         <tr>
-            <th align="left">Простая форма авторизации:
+            <td> <p><strong>Простая форма авторизации:</strong></p>
                 <br>
-                <br>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <form name="form_3" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
-                        
-                        </fieldset>
-                </form>
-
-
-            </th>
-
-            <th align="left">Опрос(голосование):
-                <br>
-                <br>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">    
-                <fieldset>
-                    
+                        <legend>Авторизируйтесь</legend>
+                            <input type="text" name="login" autofocus required> * Логин <br><br>
+                            <input type="text" name="password" autofocus required> * Пароль <br>
+                            <label><input type="checkbox" name="stay_in_system"> Оставаться в системе </label><br>
+                            <input type="submit" value="Войти">
                     </fieldset>
                 </form>
-            </th>
+            </td>
+            <td> <p><strong>Опрос(голосование):</strong></p>
+                <br>
+                <form name="form_4" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                    <fieldset>
+                        <legend>Как вам?</legend>
 
+                    </fieldset>
+                </form>
+            </td>
         </tr>
 
         <tr>
@@ -106,8 +99,6 @@
             </th>
 
         </tr>
-
        </table>
-    </div>
     </body>
 </html>
