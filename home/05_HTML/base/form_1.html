@@ -14,8 +14,8 @@
                         <legend>Строка поиска</legend>
                             <input type="text" name="search" maxlength="10">
                             <input type="submit" value="Искать"> <br>
-                            <input type="radio" name="radio_form_1" value="site" id="site"> на сайте
-                            <input type="radio" name="radio_form_1" value="google" id="google"> в google <br>
+                            <input type="radio" name="radio_form_1" value="site"> на сайте
+                            <input type="radio" name="radio_form_1" value="google"> в google <br>
                     </fieldset>
                 </form>
             </td>
@@ -37,7 +37,6 @@
             <br>
         <tr>
             <td> <p><strong>Простая форма авторизации:</strong></p>
-                <br>
                 <form name="form_3" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Авторизируйтесь</legend>
@@ -49,35 +48,38 @@
                 </form>
             </td>
             <td> <p><strong>Опрос(голосование):</strong></p>
-                <br>
                 <form name="form_4" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Как вам?</legend>
-
+                            <input type="radio" name="radio_form_4" value="not_so"> ничего <br>
+                            <input type="radio" name="radio_form_4" value="not_bad"> неплохо <br>
+                            <input type="radio" name="radio_form_4" value="good"> хорошо <br>
+                            <input type="radio" name="radio_form_4" value="super"> супер <br>
+                            <input type="submit" value="Отправить">
+                            <input type="hidden" name=date_voite, value="2013.12.31">
                     </fieldset>
                 </form>
             </td>
         </tr>
-
         <tr>
-            <th>Отзыв:
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <td> <p><strong>Отзыв:</strong></p>
+                <form name="form_5" action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
                     <fieldset>
-                        
-                        </fieldset>
-                </form>
-
-
-            </th>
-
-            <th>Выпадающий и мульти списки:
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">    
-                <fieldset>
-                    
+                        <legend> Оставьте Ваш отзыв </legend>
+                        <input type="text" name="name" required> * Имя <br><br>
+                        <input type="email" name="email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"> * e-mail <br>
+                        <textarea name="textarea">Форма отправки</textarea> <br>
+                        <input type="submit" value="Отправить">
                     </fieldset>
                 </form>
-            </th>
-
+            </td>
+            <td> <p><strong>Выпадающий и мульти списки:</strong></p>
+                <form name="form_6" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                    <fieldset>
+                        <legend> Города РБ </legend>
+                    </fieldset>
+                </form>
+            </td>
         </tr>
         <tr>
             <th>Загрузка файла на сервер:
