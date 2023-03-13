@@ -83,7 +83,7 @@
                                 <option value="5">Гродно</option>
                                 <option value="6">Могилев</option>
                             </select>
-                            <select name="sities_RB1[]" size="6" multiple id="sities_RB1">
+                            <select name="sities_RB1" size="6" multiple id="sities_RB1">
                                 <option value="1">Брест</option>
                                 <option value="2">Минск</option>
                                 <option value="3">Витебск</option>
@@ -125,7 +125,7 @@
                         <legend>Строка поиска</legend>
                             <input type="search" name="search" required value="Только русские буквы" pattern="^[А-Яа-яЁё\s]+$"><br>
                             <i>Телефонный номер в формате </i> <br>
-                            <input type="tel" name="tel" required value="+xxx(xx)xxx-xx-xx" pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                            <input type="tel" name="tel" required placeholder="+375(29)123-xx-xx" pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
                             <input type="submit" value="Проверить">
                     </fieldset>
                 </form>
