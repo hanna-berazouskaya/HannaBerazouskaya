@@ -1,0 +1,11 @@
+.center {
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+}
+.email {
+font-family: 'Bad Script', cursive;
+}
+.indent {
+text-indent: 30px;
+}
