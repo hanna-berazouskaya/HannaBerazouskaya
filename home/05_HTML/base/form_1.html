@@ -8,7 +8,7 @@
         <table width="700px" align="center">
         <tr>
             <td> <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form name="form_1" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Строка поиска</legend>
                             <input type="search" name="search" maxlength="10">
@@ -19,7 +19,7 @@
                 </form>
             </td>
             <td> <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form name="form_2" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Строка поиска</legend>
                             <input type="search" name="search" autofocus required> *
@@ -33,7 +33,7 @@
         
         <tr>
             <td> <p><strong>Простая форма авторизации:</strong></p>
-                <form name="form_3" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Авторизируйтесь</legend>
                             <input type="text" name="login" autofocus required> * Логин <br><br>
@@ -44,7 +44,7 @@
                 </form>
             </td>
             <td> <p><strong>Опрос(голосование):</strong></p>
-                <form name="form_4" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
                     <fieldset>
                         <legend>Как вам?</legend>
                             <input type="radio" name="radio_form_4" value="not_so"> ничего <br>
@@ -60,7 +60,7 @@
 
         <tr>
             <td> <p><strong>Отзыв:</strong></p>
-                <form name="form_5" action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
                     <fieldset>
                         <legend> Оставьте Ваш отзыв </legend>
                         <input type="text" name="name" required> * Имя <br><br>
@@ -83,7 +83,7 @@
                                 <option value="5">Гродно</option>
                                 <option value="6">Могилев</option>
                             </select>
-                            <select name="sities_RB1" size="6" multiple id="sities_RB1">
+                            <select name="sities_RB1[]" size="6" multiple id="sities_RB1">
                                 <option value="1">Брест</option>
                                 <option value="2">Минск</option>
                                 <option value="3">Витебск</option>
