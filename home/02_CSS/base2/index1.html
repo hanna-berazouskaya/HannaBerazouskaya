@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_CSS_base2_index1</title>
+    <style>
+        .class1 {
+            list-style: upper-roman;
+            width: 350px;
+        }
+        .class2 {
+            list-style: lower-roman;
+        }
+        pre {
+            background-color: black;
+            width: 400px;
+            color: green;
+            overflow: auto;
+            max-height: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="class1">
+        <li><strong>Контейнер с кодом</strong></li>
+        <ul class="class2">
+            <li>Цвет фона: черный</li>
+            <li>Цвет текста: зеленый</li>
+            <li>Ширина: 400px</li>
+            <li>Максимальная высота контейнера: 4-е строки</li>
+            <li>Переполнение: автоматическое</li>
+        </ul>
+        <li><strong>Список</strong></li>
+        <ul class="class2"> 
+            <li>Ширина: 350px</li>
+            <li>Тип текста: римские цифры</li>
+            <li>Тип вложения списка: римские нижний регистр цифры</li>
+        </ul>
+    </ul>
+    <pre><code>
+        #!/usr/bin/env python
+        print 'Hello, I am a python program.'
+        name = raw_input("What is your name&")
+        print "Hello there, " + name + "!"
+    </code></pre>
+</body>
+</html>
