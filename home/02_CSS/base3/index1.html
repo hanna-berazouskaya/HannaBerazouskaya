@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap {
+            background-color:goldenrod;
+            overflow: hidden;
+        }
+        .left_block {
+            width: 15em;
+            background-color:gold;
+            text-align: left;
+            overflow: auto;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            float: left;
+        }
+        .upper_block {
+            background-color:wheat;
+            text-align: left;
+            overflow: auto;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-bottom: .2em;
+            margin-left: 15em;
+            
+        }
+        .lower_block {
+            background-color:wheat;
+            text-align: left;
+            overflow: auto;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-bottom: .2em;
+            margin-left: 15em;
+        }
+        .footer_block {
+            background-color:coral;
+            clear: both;
+        }
+        .clear {
+        }
+        .image_email{
+            background-image: url(png-transparent-email-computer-icons-outlook-com-apps-miscellaneous-blue-angle.png); 
+            background-repeat:no-repeat;
+            float: right;
+            width: 400px;
+            height: 340px;
+            background-position-x: right;
+            background-position-y: bottom;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left_block">
+            <h4>Блок навигации</h4>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутсвовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере.</li>
+            </ul>
+        </div>
+        <div class="upper_block">
+            <h4>Статья 1</h4>
+            Размер блока:<br>
+            Занимает всю допустимую ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom
+        </div>
+        <div class="lower_block">
+            <h4>Статья 2</h4>
+            Размер блока:<br>
+            Занимает всю допустимую ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom. Картинка вставленная при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки.
+            
+            <div class="image_email"></div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer_block">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+    </div>
+</body>
+</html>
