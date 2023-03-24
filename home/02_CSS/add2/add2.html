@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add2</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            flex-wrap: nowrap;
+        }
+        .left_block {
+            width: 15em;
+            background-color:gold;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            flex-wrap: nowrap;
+            align-self: flex-start; 
+        }
+        .upper_block {
+            background-color:wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .lower_block {
+            background-color:wheat;
+        
+        }
+        .footer_block {
+            background-color:coral;
+            clear: both;
+        }
+        .image_email{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left_block">
+            <h4>Блок навигации</h4>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутсвовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере.</li>
+            </ul>
+        </div>
+        <div class="upper_block">
+            <h4>Статья 1</h4>
+            Размер блока:<br>
+            Занимает всю допустимую ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom
+            <div class="lower_block">
+                <h4>Статья 2</h4>
+                Размер блока:<br>
+                Занимает всю допустимую ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom. Картинка вставленная при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки.
+                <div class="image_email"><img src="../base3/png-transparent-email-computer-icons-outlook-com-apps-miscellaneous-blue-angle.png" height="100px" width="100px" alt="image_email"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_block">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+    </div>
+</body>
+</html>
