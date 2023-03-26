@@ -2,14 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        .MenuLevel1 { width: 100px }
-        .MenuLevel1 > div { background-color: #d3d3d3; border: solid #464646 1px; position: relative; cursor: default }
-        .MenuLevel2 { width: 150px; display: none }
-        .MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
-        .MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .MenuLevel1 > div { 
+            background-color: #d3d3d3; 
+            border: solid #464646 1px; 
+            position: relative; 
+            cursor: pointer;
+            width: 100px;
+            float: left; }
+        .MenuLevel2 { 
+            width: 150px; 
+            display: none }
+        .MenuLevel2 > div { 
+            background-color: #d3d3d3; 
+            border: solid #464646 1px; 
+            cursor: pointer }
+        .MenuLevel1 > div:hover div.MenuLevel2 { 
+            display: block; 
+            position: absolute; 
+            width: 100%; }
+        
+        @media all and (max-width: 200px) {
+            .MenuLevel1 > div:hover div.MenuLevel2 { 
+            display: block; 
+            position: absolute; 
+            left: 80%; 
+            top: 30%; 
+            z-index: 50 }
+        }
     </style>
 
 </head>
