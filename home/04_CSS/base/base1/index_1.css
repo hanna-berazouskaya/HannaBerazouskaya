@@ -1,0 +1,14 @@
+.brd { border: 2px solid #828282; margin: 0; padding: 0;}
+        em.bt b, em.bb {
+        display: block;
+        height: 10px;
+        background: url(img/ramka.png) no-repeat;
+        position: relative; }
+        em.bt b { background-position:  100% -10px; top: -2px; left: 2px; }
+        em.bb { background-position: 0 -20px; top: 2px; left: -2px; }
+       
+        .word:hover::after {content: url(img/word.jpeg);}
+        
+        .pdf:hover::after {content: url(img/adobe.png);}
+
+        .zip:hover::after {content: url(img/zip.gif);}
