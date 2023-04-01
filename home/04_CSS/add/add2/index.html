@@ -13,8 +13,38 @@
 			height: 50px;
 		}
         
-		.chess tr:nth-child(odd) td:nth-child(odd) { background: rgb(0, 0, 0);}	
-        .chess tr:nth-child(even) td:nth-child(even) {background: rgb(0, 0, 0);}
+		.chess tr:nth-child(odd) td:nth-child(odd) { 
+			background: rgb(0, 0, 0);
+			color: white;
+			font-size: 30px;
+			text-align: center;
+		}	
+        .chess tr:nth-child(even) td:nth-child(even) {
+			background: rgb(0, 0, 0);
+			color: white;
+			font-size: 30px;
+			text-align: center;
+		}
+
+		.chess tr:nth-child(even) td:nth-child(odd) {
+			background: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			font-size: 30px;
+			text-align: center;
+		}
+		.chess tr:nth-child(odd) td:nth-child(even) {
+			background: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			font-size: 30px;
+			text-align: center;
+		}
+		table {
+			counter-reset: chess 65;
+		}
+		td::before{
+			counter-increment: chess -1;
+			content: counter(chess) " ";
+		}
     </style>
 </head>
 <body>
