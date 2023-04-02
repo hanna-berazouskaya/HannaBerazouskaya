@@ -5,8 +5,6 @@
     <title>Jquery_table_base</title>
 
     <style>
-        body {
-            background: rgb(255, 255, 255);}
         table {
             border-collapse: collapse;
             border: 2px solid white;
@@ -86,7 +84,7 @@
             <td class="right">6975679</td> 
         </tr>
         <tr>
-            <td>ДАННЫЕ О СОТРУДНИКАХ </td>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
         </tr>
         </table>
         
@@ -98,10 +96,10 @@
             $('tr').on ('click', function () {
             $(this).hide();
             });
-            $('tr').click (function () {
-            $('.btn').text("Показать все данные");
+                $('tr').click (function () {
+                $('.btn').text("Показать все данные");
             });
-            $(".btn").click (function () {
+                $(".btn").click (function () {
                 $("tr").show();
                 $('.btn').text("Нет скрытых строк");    
             });
