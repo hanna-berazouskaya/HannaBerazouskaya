@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery_table_base</title>
+
+    <style>
+        form {
+            width: 25%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p><strong>Проверка пароля:</strong></p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
+        <fieldset>
+            <input type="text" name="password" class="password" autofocus required>* Пароль <br>
+            <input type="text" name="cor_password" class="cor_password" required >* Повторите пароль <br>
+            <input type="submit" value="Отправить" id="submit">
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+   
+    <script>
+         $(".password").keydown(function() { // При заполнении меняется цвет в 2ух формах
+             $(".password").css("background", "green");
+             $(".cor_password").css("background", "green");});
+
+        $(".cor_password").on("keyup", function() {
+        
+            var value_input1 = $(".password").val(); // Получила содержимое 1-го поля
+            var value_input2 = $(".cor_password").val(); // Получила содержимое 2-го поля
+            
+            if(value_input1 != value_input2) {
+                $(".password").css("background", "red");
+                $(".col_password").css("background", "red");  // Как изменить цвет и во 2ой форме?
+
+            } else { 
+                $(".password").css("background", "green");
+                $("#submit").removeAttr("disabled");  // Разрешила отправку формы
+                
+            }
+            
+        });
+
+    </script>
+
+</body>
+</html>
