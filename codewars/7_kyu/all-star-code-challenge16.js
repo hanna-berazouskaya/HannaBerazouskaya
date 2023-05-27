@@ -10,3 +10,7 @@ function noRepeat(str) {
     if (str.split(i).length ==2 )
     return i
   }
+// Option 2  разобралась с решение при помощи помощника
+  function noRepeat(str) {
+    return str.split("").filter((x,i)=>str.indexOf(x)===str.lastIndexOf(x))[0];
+  }
