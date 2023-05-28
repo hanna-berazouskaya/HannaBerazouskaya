@@ -94,7 +94,7 @@ Change the 0 so the difference is 12. */
 
 const difference = 45 - 33;
 
-// 13. 
+// 13. Multiply Two Numbers with JavaScript
 
 /* Example
 
@@ -104,3 +104,66 @@ myVar would have the value 169.
 Change the 0 so that product will equal 80. */
 
 const product = 8 * 10;
+
+// 14. Divide One Number by Another with JavaScript
+
+/* Example
+
+const myVar = 16 / 2;
+myVar now has the value 8. 
+
+Change the 0 so that the quotient is equal to 2. */
+
+const quotient = 66 / 33;
+
+// 15. Increment a Number with JavaScript
+
+/* You can easily increment or add one to a variable with the ++ operator.
+
+i++;
+is the equivalent of
+
+i = i + 1;
+Note: The entire line becomes i++;, eliminating the need for the equal sign.
+
+Change the code to use the ++ operator on myVar. */
+
+//let myVar = 87;
+
+// Only change code below this line
+myVar++;
+
+// 16. Decrement a Number with JavaScript
+
+/* You can easily decrement or decrease a variable by one with the -- operator.
+i--;
+is the equivalent of i = i - 1;
+Note: The entire line becomes i--;, eliminating the need for the equal sign.
+
+Change the code to use the -- operator on myVar. */
+
+let myVar = 11;
+
+// Only change code below this line
+myVar--;
+
+// 17. Create Decimal Numbers with JavaScript
+
+/* Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7). */
+
+const ourDecimal = 5.7;
+
+// Only change code below this line
+
+var myDecimal = 5.7;
+
+// 18. Multiply Two Decimals with JavaScript
+
+/* Change the 0.0 so that product will equal 5.0. */
+
+// const product = 2.0 * 2.5;
+
+// 19. Divide One Decimal by Another with JavaScript
+
+
+
