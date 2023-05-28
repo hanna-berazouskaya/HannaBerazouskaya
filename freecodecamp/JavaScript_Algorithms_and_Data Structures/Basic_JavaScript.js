@@ -71,3 +71,36 @@ let catSound = "Meow!";
  let fact = "is cool!"; // Change this line
  fact = "is awesome!";
  console.log(FCC, fact); // Change this line
+
+ // 11. Add Two Numbers with JavaScript
+
+ /* Example:
+
+const myVar = 5 + 10;
+myVar now has the value 15.
+
+Change the 0 so that sum will equal 20.*/
+
+const sum = 10 + 10;
+
+// 12. Subtract One Number from Another with JavaScript
+
+/* Example
+
+const myVar = 12 - 6;
+myVar would have the value 6.
+
+Change the 0 so the difference is 12. */
+
+const difference = 45 - 33;
+
+// 13. 
+
+/* Example
+
+const myVar = 13 * 13;
+myVar would have the value 169.
+
+Change the 0 so that product will equal 80. */
+
+const product = 8 * 10;
