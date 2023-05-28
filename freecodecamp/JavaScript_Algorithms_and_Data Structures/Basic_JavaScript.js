@@ -165,5 +165,17 @@ var myDecimal = 5.7;
 
 // 19. Divide One Decimal by Another with JavaScript
 
+/* Now let's divide one decimal by another.
 
+Change the 0.0 so that quotient will equal to 2.2. */
+
+//const quotient = 4.4 / 2.0; // Change this line
+
+// 20. Finding a Remainder in JavaScript
+
+/* Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator. */
+
+const remainder = 11%3;
+
+// 21. Compound Assignment With Augmented Addition
 
