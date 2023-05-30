@@ -229,7 +229,8 @@ a /= 12;
 b /= 4;
 c /= 11;
 
-// 24. Escaping Literal Quotes in Strings
+
+// 25. Escaping Literal Quotes in Strings
 
 /* Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
 
@@ -237,10 +238,32 @@ I am a "double quoted" string inside "double quotes". */
 
 //const myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
-// 25. Quoting Strings with Single Quotes
+// 26. Quoting Strings with Single Quotes
 
 /* Change the provided string to a string with single quotes at the beginning and end and no escape characters.
 
 Right now, the <a> tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters. */
 
 const myStr = '<a href="http://www.example.com" target="_blank"> Link </a>';
+
+
+// 27. Escape Sequences in Strings
+
+/* Assign the following three lines of text into the single variable myStr using escape sequences.
+
+FirstLine
+    \SecondLine
+ThirdLine
+You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.
+
+Note: The indentation for SecondLine is achieved with the tab escape character, not spaces. */
+
+// const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+
+/* 28. Concatenating Strings with Plus Operator
+
+Build myStr from the strings This is the start. and This is the end. using the + operator. Be sure to include a space between the two strings.*/
+
+
+
+
