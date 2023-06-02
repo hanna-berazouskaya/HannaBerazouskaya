@@ -20,7 +20,11 @@ function superGame(min, max, attemptsNumber, randomNumber, playerName){
     let playerAnswers=[]
 
     for (let attempt=1; attempt<= attemptsNumber; attempt++){
-        const playerAnswer = prompt('Введите число','')
+        let playerAnswer = parseFloat (prompt('Введите число',''))
+
+        while(isNaN(playerAnswer)){
+        playerAnswer = parseFloat (prompt('Введите число',''))
+        }
 
         if (playerAnswer > randomNumber){
             alert(`Моё число меньше! У тебя осталось ${attemptsNumber - attempt} попыток`)
@@ -36,4 +40,4 @@ function superGame(min, max, attemptsNumber, randomNumber, playerName){
     alert(`Ты не справился за ${attemptsNumber} попыток. Я загадал ${randomNumber}. А твои ответы - ${playerAnswers}`)
 }
 
-superGame (mix, max, attemptsNumber, randomNumber, playerName)
+superGame (min, max, attemptsNumber, randomNumber, playerName)
