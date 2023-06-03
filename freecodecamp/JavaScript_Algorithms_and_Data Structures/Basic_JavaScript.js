@@ -324,3 +324,157 @@ const myArray = ["Hello",1];
 
 /* 41. Access Array Data with Indexes */
 
+// const myArray = [50, 60, 70];
+var myData = myArray[0];
+console.log(myData)
+
+/* 41. Modify Array Data With Indexes */
+
+// Setup
+//const myArray = [18, 64, 99];
+
+// Only change code below this line
+myArray[0] = 45;
+
+/* 42. Access Multi-Dimensional Arrays With Indexes */
+
+const myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+  const myData = myArray[2][1];
+
+/* 43. Manipulate Arrays With push Method */
+
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3])
+
+/* 44. Manipulate Arrays With pop Method */
+
+/* Use the .pop() function to remove the last item from myArray and assign the popped off value to a new variable, removedFromMyArray. */
+
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+//const removedFromMyArray = myArray.pop();
+
+/* 45. Manipulate Arrays With shift Method*/
+
+/* Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.*/
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift();
+
+/* 46. Manipulate Arrays With unshift Method
+
+Add ["Paul", 35] to the beginning of the myArray variable using unshift().*/
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
+
+/* 47. Shopping List
+There should be at least 5 sub-arrays in the list.*/
+
+const myList = [["Chocolate Bar", 20],["Chocolate", 15],["Bar", 10],["Chocol", 5],["Choco Bar", 1]];
+
+/* 48. Write Reusable JavaScript with Functions
+1. Create a function called reusableFunction which prints the string Hi World to the dev console.
+2. Call the function. */
+
+function reusableFunction(){
+    console.log("Hi World");
+  }
+  reusableFunction();
+
+/* 49. Passing Values to Functions with Arguments
+1. Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+2. Call the function with two numbers as arguments.
+*/
+function functionWithArgs(a,b) {
+    console.log(a + b);
+  }
+  functionWithArgs(1,2);
+
+/* 50. Return a Value from a Function with Return
+Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value. */
+
+function timesFive(num) {
+    return num * 5;
+  }
+const answer = timesFive(5);
+
+
+/* 51. Global Scope and Functions
+Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+
+Inside function fun1, assign 5 to oopsGlobal without using the var, let or const keywords. */ 
+
+// Declare the myGlobal variable below this line
+const myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+/* 52. Local Scope and Functions
+The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
+
+Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail. */
+
+function myLocalScope() {
+// Only change code below this line
+const myVar='';
+console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+  
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+
+
+
+/* 53. Global vs. Local Scope in Functions
+Add a local variable to myOutfit function to override the value of outerWear with the string sweater. */
+
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  const outerWear = "sweater";
+  return outerWear;
+}
+
+console.log (myOutfit());
+console.log (outerWear);
+
+/* 54. Understanding Undefined Value returned from a Function
+Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined. */
+
