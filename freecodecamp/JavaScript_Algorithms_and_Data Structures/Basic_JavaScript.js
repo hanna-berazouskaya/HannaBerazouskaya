@@ -478,3 +478,40 @@ console.log (outerWear);
 /* 54. Understanding Undefined Value returned from a Function
 Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined. */
 
+// Setup
+//let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive() {
+  sum = sum + 5;
+}
+// Only change code above this line
+
+addThree();
+addFive();
+
+/* 55. Assignment with a Returned Value
+Call the processArg function with an argument of 7 and assign its return value to the variable processed. */
+
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+// Only change code below this line
+
+/* 56. Stand in Line
+Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+
+Add the number to the end of the array, then remove the first element of the array.
+
+The nextInLine function should then return the element that was removed. */
+
+
