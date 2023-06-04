@@ -562,12 +562,161 @@ function testEqual(val) {
   }
   return "Not Equal";
 }
-
-testEqual(10);
+//testEqual(10);
 
 /* 60. Comparison with the Strict Equality Operator
 Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7. */
 
+// Setup
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
 
+/* 61. Practice comparing different values
+The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns the string Equal only when the values are strictly equal. */
 
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+compareEquality(10, "10");
+
+/* 62. Comparison with the Inequality Operator
+Add the inequality operator != in the if statement so that the function will return the string Not Equal when val is not equivalent to 99. */
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotEqual(10);
+
+/* 63. Comparison with the Strict Inequality Operator
+Add the strict inequality operator to the if statement so the function will return the string Not Equal when val is not strictly equal to 17 */
+
+// Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
+
+/* 64. Comparison with the Greater Than Operator
+Add the greater than operator to the indicated lines so that the return statements make sense. */
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+  return "10 or Under";
+}
+testGreaterThan(10);
+
+/* 65. Comparison with the Greater Than Or Equal To Operator
+Add the greater than or equal to operator to the indicated lines so that the return statements make sense. */
+
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+  return "Less than 10";
+}
+testGreaterOrEqual(10);
+
+/* 66. Comparison with the Less Than Operator
+Add the less than operator to the indicated lines so that the return statements make sense. */
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+  return "55 or Over";
+}
+testLessThan(10);
+
+/* 67. Comparison with the Less Than Or Equal To Operator
+Add the less than or equal to operator to the indicated lines so that the return statements make sense. */
+
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+  return "More Than 24";
+}
+testLessOrEqual(10);
+
+/* 68. Comparisons with the Logical And Operator
+Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No. */
+
+function testLogicalAnd(val) {
+  if (val <= 50 && val >= 25) {
+      return "Yes";}
+  return "No";
+}
+testLogicalAnd(10);
+
+/* 69. Comparisons with the Logical Or Operator
+Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside. */
+
+function testLogicalOr(val) {
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+  return "Inside";
+}
+testLogicalOr(15);
+
+/* 70. Introducing Else Statements
+Combine the if statements into a single if/else statement. */
+
+function testElse(val) {
+  let result = "";
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+  return result;
+}
+testElse(4);
+
+/* 71. Introducing Else If Statements
+Convert the logic to use else if statements. */
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+}
+}
+testElseIf(7);
+
+/* 72. Logical Order in If Else Statements
+Change the order of logic in the function so that it will return the correct statements in all cases. */
 
