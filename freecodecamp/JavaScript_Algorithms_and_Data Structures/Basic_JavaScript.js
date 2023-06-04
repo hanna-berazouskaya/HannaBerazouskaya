@@ -531,6 +531,43 @@ function nextInLine(arr, item) {
 
 
 /* 57. Understanding Boolean Values
-Modify the welcomeToBooleans function so that it returns true instead of false.   */
+Modify the welcomeToBooleans function so that it returns true instead of false. */
+
+function welcomeToBooleans() {
+  // Only change code below this line
+
+  return true; // Change this line
+
+  // Only change code above this line
+}
+
+/* 58. Use Conditional Logic with If Statements 
+Create an if statement inside the function to return Yes, that was true if the parameter wasThatTrue is true and return No, that was false otherwise.*/
+
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+
+/* 59. Comparison with the Equality Operator
+Add the equality operator to the indicated line so that the function will return the string Equal when val is equivalent to 12. */
+
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+
+/* 60. Comparison with the Strict Equality Operator
+Use the strict equality operator in the if statement so the function will return the string Equal when val is strictly equal to 7. */
+
+
 
 
