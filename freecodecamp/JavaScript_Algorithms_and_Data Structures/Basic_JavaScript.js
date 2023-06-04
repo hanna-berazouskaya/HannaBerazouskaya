@@ -720,3 +720,178 @@ testElseIf(7);
 /* 72. Logical Order in If Else Statements
 Change the order of logic in the function so that it will return the correct statements in all cases. */
 
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+orderMyLogic(7);
+
+/* 73. Chaining If Else Statements
+Write chained if/else if statements to fulfill the following conditions:
+
+num < 5 - return Tiny
+num < 10 - return Small
+num < 15 - return Medium
+num < 20 - return Large
+num >= 20 - return Huge */
+
+function testSize(num) {
+  // Only change code below this line
+
+if (num < 5) {
+  return "Tiny";
+} else if (num < 10) {
+  return "Small";
+} else if (num < 15 ) {
+  return "Medium";
+} else if (num < 20) {
+  return "Large";
+} else if (num >= 20) {
+  return "Huge";
+} else {
+  return "Change Me";
+}
+  // Only change code above this line
+}
+
+testSize(7);
+
+
+/* 74. Golf Code */
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+
+if (strokes == 1) {
+  return names [0];
+} else if (strokes <= par - 2	) {
+  return names [1];
+} else if (strokes == par - 1 ) {
+  return names [2];
+} else if (strokes == par) {
+  return names [3];
+} else if (strokes == par + 1) {
+  return names [4];
+} else if (strokes == par + 2) {
+  return names [5];
+} else if (strokes >= par + 3	) {
+  return names [6];
+} 
+else {
+  return "Change Me";
+}
+
+  // Only change code above this line
+}
+
+golfScore(5, 4);
+
+/* 75. Selecting from Many Options with Switch Statements
+Write a switch statement which tests val and sets answer for the following conditions:
+1 - alpha
+2 - beta
+3 - gamma
+4 - delta */
+
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+
+switch (val) {
+  case 1:
+    answer = "alpha";
+    break;
+  case 2:
+    answer = "beta";
+    break;
+  case 3:
+    answer = "gamma";
+    break;
+  case 4:
+    answer = "delta";
+    break;
+}
+
+  // Only change code above this line
+  return answer;
+}
+
+caseInSwitch(1);
+
+/* 76. Adding a Default Option in Switch Statements
+Write a switch statement to set answer for the following conditions:
+a - apple
+b - bird
+c - cat
+default - stuff */
+
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+
+switch (val) {
+  case "a":
+    answer = "apple";
+    break;
+  case "b":
+    answer = "bird";
+    break;
+  case "c":
+    answer = "cat";
+    break;
+  default:
+    answer = "stuff";
+    break;
+}
+
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);
+
+/* 77. Multiple Identical Options in Switch Statements
+Write a switch statement to set answer for the following ranges:
+1-3 - Low
+4-6 - Mid
+7-9 - High
+
+Note: You will need to have a case statement for each number in the range. */
+
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    answer = "Low";
+    break;
+  case 4:
+  case 5:
+  case 6:
+    answer = "Mid";
+    break;
+  case 7:
+  case 8:
+  case 9:
+    answer = "High";
+    break;
+}
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
+
+/* 78. Replacing If Else Chains with Switch
+Change the chained if/else if statements into a switch statement. */
+
