@@ -1038,4 +1038,29 @@ const entreeValue = testObj["an entree"];   // Change this line
 const drinkValue = testObj["the drink"];    // Change this line
 
 /* 86. Accessing Object Properties with Variables
- */
+Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player. */
+
+// Setup
+/*const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};*/
+
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj[playerNumber];   // Change this line
+
+/* 87. Updating Object Properties
+// Setup
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+// Only change code below this line
+
+myDog.name = "Happy Coder"; */
+
+/* 88. */
