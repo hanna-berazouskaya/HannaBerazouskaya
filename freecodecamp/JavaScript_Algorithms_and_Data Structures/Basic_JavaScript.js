@@ -1012,3 +1012,30 @@ const myDog = {
 /* 84. Accessing Object Properties with Dot Notation
 Read in the property values of testObj using dot notation. Set the variable hatValue equal to the object's property hat and set the variable shirtValue equal to the object's property shirt. */
 
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;    // Change this line
+
+/* 85. Accessing Object Properties with Bracket Notation
+Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively. */
+
+/* Setup const testObj = 
+{
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+}; */
+
+// Only change code below this line
+const entreeValue = testObj["an entree"];   // Change this line
+const drinkValue = testObj["the drink"];    // Change this line
+
+/* 86. Accessing Object Properties with Variables
+ */
