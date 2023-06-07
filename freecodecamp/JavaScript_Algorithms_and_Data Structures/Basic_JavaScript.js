@@ -1063,4 +1063,37 @@ const myDog = {
 
 myDog.name = "Happy Coder"; */
 
-/* 88. */
+/* 88. Add New Properties to a JavaScript Object
+Add a bark property to myDog and set it to a dog sound, such as "woof". You may use either dot or bracket notation. */
+
+/* const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woof"; */
+
+/* 89. Delete Properties from a JavaScript Object
+Delete the tails property from myDog. You may use either dot or bracket notation.
+
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line
+
+delete myDog.tails;*/
+
+/* 90. Using Objects for Lookups
+
+Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+
+*/
+
