@@ -5,3 +5,6 @@ Example(Input --> Output)
 
 "john McClane" --> "McClane john" */
 
+function nameSuffle(str){
+    return str.split(' ').reverse().join(' ')
+  }
