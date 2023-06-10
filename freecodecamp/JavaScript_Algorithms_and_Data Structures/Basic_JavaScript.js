@@ -1125,3 +1125,45 @@ function checkObj(obj, checkProp) {
   }
 }*/
 
+/* Manipulating Complex Objects
+Add a new album to the myMusic array. Add artist and title strings, release_year number, and a formats array of strings. 
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Jonny",
+    "title": "Man",
+    "release_year": 2012,
+    "formats": [
+      "CD",
+      "YouTube"
+    ]
+  }
+];*/
+
+/* 92. Accessing Nested Objects
+Access the myStorage object and assign the contents of the glove box property to the gloveBoxContents variable. Use dot notation for all properties where possible, otherwise use bracket notation.
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];*/
