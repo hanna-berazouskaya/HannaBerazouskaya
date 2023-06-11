@@ -1246,3 +1246,46 @@ function updateRecords(records, id, prop, value) {
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA'); */
 
+/* 95. Iterate with JavaScript While Loops
+Add the numbers 5 through 0 (inclusive) in descending order to myArray using a while loop. */
+
+// Setup
+const myArray = [];
+let i = 5;
+
+while (i >= 0){
+  myArray.push(i);
+  i--;
+}
+// Only change code below this line
+
+/* 96. Iterate with JavaScript For Loops
+Use a for loop to push the values 1 through 5 onto myArray.
+
+// Setup
+const myArray = [];
+for (let i = 1; i < 6; i++) {
+  myArray.push(i);
+}
+// Only change code below this line */
+
+/* 97. Iterate Odd Numbers With a For Loop
+Push the odd numbers from 1 through 9 to myArray using a for loop.
+
+// Setup
+const myArray = [];
+
+for(let i=1; i < 11; i+=2){
+  myArray.push(i);
+}
+*/
+
+/* 98. Count Backwards With a For Loop
+Push the odd numbers from 9 through 1 to myArray using a for loop.
+
+// Setup
+const myArray = [];
+for(let i=9; i > 0; i-=2){
+  myArray.push(i);
+} */
+
