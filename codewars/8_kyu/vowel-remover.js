@@ -12,3 +12,4 @@ y is not considered a vowel for this kata */
 function shortcut(string){
     return string.replace(/[aeiou]/g,'')
   }
+  
