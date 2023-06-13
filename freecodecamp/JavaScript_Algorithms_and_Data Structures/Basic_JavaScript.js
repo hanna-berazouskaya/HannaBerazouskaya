@@ -1396,4 +1396,23 @@ for (let i = 0; i < contacts.length; i++){
 
 lookUpProfile("Akira", "likes");*/
 
-/* 104. */
+/* 104. Generate Random Fractions with JavaScript
+
+Change randomFraction to return a random number instead of returning 0.
+
+function randomFraction() {
+
+  // Only change code below this line
+
+  return Math.random();
+
+  // Only change code above this line
+}*/
+
+/* 105. Generate Random Whole Numbers with JavaScript 
+
+Use this technique to generate and return a random whole number in the range from 0 to 9.
+
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}*/
