@@ -1416,3 +1416,10 @@ Use this technique to generate and return a random whole number in the range fro
 function randomWholeNum() {
   return Math.floor(Math.random() * 10);
 }*/
+
+/* 105. Generate Random Whole Numbers within a Range 
+Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin and less than or equal to myMax.
+
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+} */
