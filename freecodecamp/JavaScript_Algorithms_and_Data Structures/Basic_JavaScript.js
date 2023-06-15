@@ -1423,3 +1423,12 @@ Create a function called randomRange that takes a range myMin and myMax and retu
 function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 } */
+
+/* 106. Use the parseInt Function
+Use parseInt() in the convertToInteger function so it converts the input string str into an integer, and returns it.
+
+function convertToInteger(str) {
+return parseInt(str);
+}
+
+convertToInteger("56");*/
