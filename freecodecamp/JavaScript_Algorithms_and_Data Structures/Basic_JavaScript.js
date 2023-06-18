@@ -1432,3 +1432,33 @@ return parseInt(str);
 }
 
 convertToInteger("56");*/
+
+/* 106. Use the parseInt Function with a Radix
+Use parseInt() in the convertToInteger function so it converts a binary number to an integer and returns it.
+
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+convertToInteger("10011");
+*/
+
+/* 107. Use the Conditional (Ternary) Operator 
+Use the conditional operator in the checkEqual function to check if two numbers are equal or not. The function should return either the string Equal or the string Not Equal.
+
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal"
+}
+checkEqual(1, 2);
+*/
+
+/* 108. Use Multiple Conditional (Ternary) Operators
+In the checkSign function, use multiple conditional operators - following the recommended format used in findGreaterOrEqual - to check if a number is positive, negative or zero. The function should return positive, negative or zero.
+
+function checkSign(num) {
+  return (num == 0) ? "zero" 
+    : (num > 0) ? "positive" 
+    : "negative";
+}
+
+checkSign(10);
+*/
