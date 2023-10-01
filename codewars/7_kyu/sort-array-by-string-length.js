@@ -16,3 +16,8 @@ All of the strings in the array passed to your function will be different length
 function sortByLength(strings) {
   return strings.sort((a, b) => a.length - b.length);
 }
+
+// Option 2
+function sortByLength (array) {
+  return array.sort((a,b) => a.length - b.length);
+};
